@@ -1,0 +1,285 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Floating animation for points */
+.floating-animation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50; /* Green color */
+  animation: moveUpFadeOut 1s ease-in-out forwards;
+}
+
+/* Keyframes for floating effect */
+@keyframes moveUpFadeOut {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50px); /* Move up by 50px */
+    opacity: 0;
+  }
+}
+
+/* Fixed Tabs at the Bottom */
+.fixed-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Style for Tab Buttons */
+.tab-button {
+  background-color: #ffffff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.tab-button:active {
+  transform: scale(0.95);
+}
+
+/* Notification Banner */
+.notification-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 999;
+}
+/* Floating animation for points */
+.floating-animation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50; /* Green color for points */
+  animation: moveUpFadeOut 1s ease-in-out forwards;
+}
+
+/* Keyframes for floating effect */
+@keyframes moveUpFadeOut {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50px); /* Move up by 50px */
+    opacity: 0;
+  }
+}
+
+/* Fixed Tabs at the Bottom */
+.fixed-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Style for Tab Buttons */
+.tab-button {
+  background-color: #ffffff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.tab-button:active {
+  transform: scale(0.95);
+}
+
+/* Notification Banner */
+.notification-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: red;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 999;
+}
+
+/* Points Section */
+.points-section {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Image Wrapper for Animation */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 70px;
+}
+
+/* Daily Check-in Task Styles */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.task-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.task-button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-button:hover {
+  background-color: #0056b3;
+}
+
+.task-button:active {
+  transform: scale(0.95);
+}
+/* Style for Copy Referral Link Button */
+.copy-referral-button {
+  background-color: #28a745; /* Green background for the button */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.copy-referral-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.copy-referral-button:active {
+  transform: scale(0.95); /* Scale down when button is clicked */
+}
